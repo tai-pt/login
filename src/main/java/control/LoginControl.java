@@ -22,9 +22,9 @@ public class LoginControl extends HttpServlet {
 			Logindao logindao = new Logindao();
 			Login a = logindao.check(name, pass);
 			if (a == null) {
-				resp.sendRedirect("login.jsp");
+				resp.sendRedirect("login.html");
 			} else {
-				resp.sendRedirect("index.jsp");
+				resp.sendRedirect("index.html");
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

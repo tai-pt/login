@@ -25,9 +25,9 @@ public class SignControl extends HttpServlet {
 			
 			Sign a = sgindao.in(name, pass);
 			if (a != null) {
-				resp.sendRedirect("login.jsp");
+				resp.sendRedirect("login.html");
 			} else {
-				resp.sendRedirect("signup.jsp");
+				resp.sendRedirect("signup.html");
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
